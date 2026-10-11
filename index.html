@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <div class="calculator-header">
+      <h1>Calculator</h1>
+      <p>Simple calculations, made easy</p>
+    </div>
+
+    <section class="display" aria-live="polite" aria-atomic="true">
+      <div id="expression" class="expression"></div>
+      <output id="result" class="result">0</output>
+    </section>
+
+    <section class="keypad" aria-label="Calculator keys">
+      <button class="key utility" data-action="clear">AC</button>
+      <button class="key utility" data-action="delete" aria-label="Delete last digit">DEL</button>
+      <button class="key utility" data-value="%">%</button>
+      <button class="key operator" data-value="÷">÷</button>
+
+      <button class="key" data-value="7">7</button>
+      <button class="key" data-value="8">8</button>
+      <button class="key" data-value="9">9</button>
+      <button class="key operator" data-value="×">×</button>
+
+      <button class="key" data-value="4">4</button>
+      <button class="key" data-value="5">5</button>
+      <button class="key" data-value="6">6</button>
+      <button class="key operator" data-value="−">−</button>
+
+      <button class="key" data-value="1">1</button>
+      <button class="key" data-value="2">2</button>
+      <button class="key" data-value="3">3</button>
+      <button class="key operator" data-value="+">+</button>
+
+      <button class="key zero" data-value="0">0</button>
+      <button class="key" data-value=".">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </section>
+    <p class="hint">Keyboard supported · Enter to calculate · Esc to clear</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
