@@ -4,3 +4,5 @@ FROM nginx:alpine
 COPY . /usr/share/nginx/html/
 # The web server listens on port 80 inside the container
 EXPOSE 80
+
+
